@@ -32,7 +32,7 @@
             <a class="dropdown-item" href="/visual_temp.html">Max Temperature</a>
             <a class="dropdown-item" href="/visual_humidity.html">Humidity</a>
             <a class="dropdown-item" href="/visual_cloudiness.html">Cloudiness</a>
-            <a class="dropdown-item" href="/visual_wind.html">Wind Speed</a>
+            <a class="dropdown-item active" href="/visual_wind.html">Wind Speed</a>
           </div>
         </li>
         <li class="nav-item">
@@ -47,27 +47,24 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-8">
+      <div class="col-sm-8">
         <div class="content-block">
           <div class="summary">
-            <h1 class="display-5">Summary: Latitude vs X</h1>
+            <h1 class="display-5">Wind Speed</h1>
             <hr class="my-4">
-            <img src="Resources/assets/images/Fig1.png" class="image-wrapper float-left" alt="Temperature" width="200"
-              height="200">
-            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
-              accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
-              500 cities</p>
-            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude.
-              Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
-              source data and visualizations created as part of the analysis, as well as explanations and descriptions
-              of any trends and correlations witnessed.</p>
+            <img src="Resources/assets/images/Fig4.png" class="rounded" alt="Wind Speed" width="100%" height="auto">
+            <p>This chart show that the wind speed near the north pole are higher then anywhere else on the planet. This
+              may be due to the time of year, January is winter for northern hemisphere and summer for southern
+              hemisphere. The more consistant temperatures in the southern hemisphere may account for the lower wind
+              speed. The same arguement could be made for the great temperature variations in the northern hemisphere
+              affecting the increased wind speeds.</p>
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-sm-4">
         <div class="content-block">
           <div class="summary">
-            <h1 class="display-5">Visualizations</h1>
+            <h1 class="display-5" id="visual">Visualizations</h1>
             <hr class="my-4">
             <a href="/visual_temp.html" class="href">
               <img src="Resources/assets/images/Fig1.png" class="img-fluid" alt="Temperature" width="150" height="150">
@@ -79,7 +76,8 @@
               <img src="Resources/assets/images/Fig3.png" class="img-fluid" alt="Cloudiness" width="150" height="150">
             </a>
             <a href="/visual_wind.html" class="href">
-              <img src="Resources/assets/images/Fig4.png" class="img-fluid" alt="Wind Speed" width="150" height="150">
+              <img src="Resources/assets/images/Fig4.png" class="img-fluid" style="border: green 1px outset;"
+                alt="Wind Speed" width="150" height="150">
           </div>
         </div>
       </div>
